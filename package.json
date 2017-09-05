@@ -1,6 +1,6 @@
 {
   "name": "medium-editor-autoanglequotes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An extension for medium editor which auto adds angle quotation marks",
   "main": "src/autoanglequotes.js",
   "repository": {

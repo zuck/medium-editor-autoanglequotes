@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/medium-editor-autoanglequotes.svg)](https://www.npmjs.com/package/medium-editor-autoanglequotes)
 
-> An extension for [Medium Editor](https://github.com/yabwe/medium-editor) which auto adds horizontal rules.
+> An extension for [Medium Editor](https://github.com/yabwe/medium-editor) which auto adds angle quotation marks.
 
 ![Demo](https://rawgit.com/zuck/medium-editor-autoanglequotes/master/art/screenshot.gif)
 
