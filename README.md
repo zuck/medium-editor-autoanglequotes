@@ -4,6 +4,8 @@
 
 > An extension for [Medium Editor](https://github.com/yabwe/medium-editor) which auto adds horizontal rules.
 
+![Demo](https://rawgit.com/zuck/medium-editor-autoanglequotes/master/art/screenshot.gif)
+
 ## How to install
 
 ```bash
