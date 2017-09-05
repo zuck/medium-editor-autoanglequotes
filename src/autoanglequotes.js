@@ -18,9 +18,9 @@
   var AutoAngleQuotes = MediumEditor.Extension.extend({
     name: 'autoanglequotes',
     init: function () {
-      this.subscribe('editableKeypress', this.onKeypress.bind(this));
+      this.subscribe('editableInput', this.onInput.bind(this));
     },
-    onKeypress: function (evt) {
+    onInput: function (evt) {
       var parentElement = this.base.getSelectedParentElement();
       var range = document.getSelection().getRangeAt(0);
       var token = parentElement.textContent.substring(range.startOffset - 2, range.startOffset);
