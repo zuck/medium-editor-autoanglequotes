@@ -20,7 +20,7 @@ var editor = new MediumEditor('.editable', {
 });
 ```
 
-Now, type `<<` or `>>` followed by `SPACE`: `«` or `»` will appear!
+Now, type `<<` or `>>` followed by something else: `«` or `»` will appear!
 
 ## License
 

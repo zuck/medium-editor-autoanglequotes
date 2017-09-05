@@ -20,16 +20,19 @@
     init: function () {
       this.subscribe('editableKeypress', this.onKeypress.bind(this));
     },
-    onKeypress: function (keyPressEvent) {
-      if (MediumEditor.util.isKey(keyPressEvent, [MediumEditor.util.keyCode.SPACE])) {
-        var parentElement = this.base.getSelectedParentElement();
-        var quoteStart = parentElement.textContent;
-        if (quoteStart === LEFT_QUOTE_TOKEN) {
-          parentElement.textContent = parentElement.textContent.slice(3).trim() + '\u00AB'
-        }
-        else if (quoteStart === LEFT_QUOTE_TOKEN) {
-          parentElement.textContent = parentElement.textContent.slice(3).trim() + '\u00BB'
-        }
+    onKeypress: function (evt) {
+      var parentElement = this.base.getSelectedParentElement();
+      var range = document.getSelection().getRangeAt(0);
+      var token = parentElement.textContent.substring(range.startOffset - 2, range.startOffset);
+      if (token === LEFT_QUOTE_TOKEN) {
+        document.execCommand('delete');
+        document.execCommand('delete');
+        document.execCommand('insertText', false, '\u00AB');
+      }
+      else if (token === RIGHT_QUOTE_TOKEN) {
+        document.execCommand('delete');
+        document.execCommand('delete');
+        document.execCommand('insertText', false, '\u00BB');
       }
     }
   });
