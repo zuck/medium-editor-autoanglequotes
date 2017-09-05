@@ -1,5 +1,7 @@
 # medium-editor-autoanglequotes
 
+[![npm version](https://badge.fury.io/js/medium-editor-autoanglequotes.svg)](https://www.npmjs.com/package/medium-editor-autoanglequotes)
+
 > An extension for [Medium Editor](https://github.com/yabwe/medium-editor) which auto adds horizontal rules.
 
 ## How to install
